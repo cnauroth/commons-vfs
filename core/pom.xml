@@ -237,6 +237,12 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <trimStackTrace>false</trimStackTrace>
+          <environmentVariables>
+            <!-- HADOOP_HOME required for tests on Windows to find winutils -->
+            <HADOOP_HOME>${basedir}</HADOOP_HOME>
+            <!-- Specify where to look for the native DLL on Windows -->
+            <PATH>${env.PATH};${basedir}/bin</PATH>
+          </environmentVariables>
           <systemPropertyVariables>
             <test.basedir>target/test-classes/test-data</test.basedir>
             <test.basedir.res>test-data</test.basedir.res>

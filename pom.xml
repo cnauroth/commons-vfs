@@ -464,14 +464,28 @@
       <!-- HDFS dependencies -->
       <dependency>
         <groupId>org.apache.hadoop</groupId>
-        <artifactId>hadoop-core</artifactId>
-        <version>1.1.2</version>
+        <artifactId>hadoop-common</artifactId>
+        <version>2.4.0</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.apache.hadoop</groupId>
-        <artifactId>hadoop-test</artifactId>
-        <version>1.1.2</version>
+        <artifactId>hadoop-common</artifactId>
+        <version>2.4.0</version>
+        <type>test-jar</type>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.hadoop</groupId>
+        <artifactId>hadoop-hdfs</artifactId>
+        <version>2.4.0</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.hadoop</groupId>
+        <artifactId>hadoop-hdfs</artifactId>
+        <version>2.4.0</version>
+        <type>test-jar</type>
         <scope>test</scope>
       </dependency>
       <dependency>

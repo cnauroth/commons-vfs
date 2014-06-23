@@ -132,21 +132,33 @@
       <scope>test</scope>
     </dependency>
     <!-- Test HDFS with Apache Hadoop -->
-      <dependency>
-        <groupId>org.apache.hadoop</groupId>
-        <artifactId>hadoop-core</artifactId>
-        <scope>provided</scope>
-      </dependency>
-	  <dependency>
-		<groupId>org.apache.hadoop</groupId>
-		<artifactId>hadoop-test</artifactId>
-		<scope>test</scope>
-	  </dependency>
-	  <dependency>
-		<groupId>javax.ws.rs</groupId>
-		<artifactId>jsr311-api</artifactId>
-		<scope>test</scope>
- 	  </dependency>
+    <dependency>
+      <groupId>org.apache.hadoop</groupId>
+      <artifactId>hadoop-common</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.hadoop</groupId>
+      <artifactId>hadoop-common</artifactId>
+      <type>test-jar</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.hadoop</groupId>
+      <artifactId>hadoop-hdfs</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.hadoop</groupId>
+      <artifactId>hadoop-hdfs</artifactId>
+      <type>test-jar</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.ws.rs</groupId>
+      <artifactId>jsr311-api</artifactId>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <properties>
